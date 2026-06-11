@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "Read(*)",
+      "Glob(*)",
+      "Grep(*)",
+      "Write(agent_todo.md)",
+      "Write(rapport-*.md)",
+      "Write(seo-report-*.md)"
+    ],
+    "deny": [
+      "Bash(git commit*)",
+      "Bash(git push*)",
+      "Bash(git merge*)",
+      "Bash(rm *)",
+      "Bash(curl * -X POST*)",
+      "Bash(curl * --data*)"
+    ]
+  }
+}
